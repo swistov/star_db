@@ -37,13 +37,13 @@ export default class RandomPlanet extends Component {
 
         const { planet, loading } = this.state;
 
-        if (loading) {
-            return <Spinner />;
-        }
+        const spinner = loading ? <Spinner /> : null;
+        const content = !loading ? <PlanetView planet={planet} /> : null;
 
         return (
             <div className="random-planet jumbotron rounded">
-                <PlanetView planet={planet} />
+                { spinner }
+                { content }
             </div>
 
         );

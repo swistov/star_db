@@ -160,3 +160,7 @@
     -webkit-transform: translate(-27px, -27px) scale(0.27) translate(27px, 27px);
     transform: translate(-27px, -27px) scale(0.27) translate(27px, 27px);
 }
+
+.lds-css {
+    margin-left: 300px;
+}
